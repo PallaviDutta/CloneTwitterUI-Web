@@ -41,7 +41,7 @@ body{
     background:#fff;
 }
 .main-container{
-    height: 500px;
+    height: 1000px;
     width:100%;
     background:#fff;
 }
@@ -154,7 +154,7 @@ body{
               <div class="main-search">
               </div>
               <button class="see-new-tweets">See New Tweets</button>
-              <div>
+              <div style="padding: 10px;">
               <br> 
               <div>
                 <div>
@@ -167,9 +167,191 @@ body{
                 </div>
             </div>
               <img src="images/plant_monitoring_bolt.jpeg" style="display: inline-block; width: 100%; height: 100%;" alt="Italian Trulli">
+              <div class="cards-number">
+
+              <div class="col-lg-2">
+              <a href="#" id="reply_popup">
+                  <img id="reply" src="images/reply.png" style="width: 18px; height: 18px;">
+                  
+              </a>
+
+              <div class="container">
+                <!-- Trigger the modal with an icon -->
+                <!-- Modal -->
+                <div class="modal fade" id="modal_reply" role="dialog">
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"><center><b>Reply to Tito</b></center></h4>
+                      </div>
+                      <div class="modal-body">
+                        <p> 
+                        <div>
+                          <div>
+                          <img src="images/tito.jpg" style="display: inline-block; width: 35px; height: 35px; border-radius: 50%; float: left;" alt="Italian Trulli">                
+                          </div>
+                          <div style="color: #14171a;font-size: 14px;"><b>
+                      Tito &nbsp</b><span>@ItsTito</span><span>@DCComics @ZackSnyder @wbpictures @Gotham @gothamwriters @YouTube @PepperPotts @MBaku @Ned @Eitri @Marvel</span>
+                          </div>
+                          </div>
+                          </p>
+                      </div>
+                      <div style="height:50%;width: 100%;background:#E8F5FD">
+                      <span style="margin-left: 10px;font color: #E8F5FD;">Replying to <a href="@ItsTito">@ItsTito</a></span>
+                      <div class="modal-footer">
+                        <div style="color: #14171a;">
+                            <textarea rows="3" cols="68" placeholder="Tweet your reply" style="border-color: #E8F5FD;border-radius: 5px;">
+                            </textarea>
+                            <div>
+                              <button type="button" style="float: right;border-radius: 12px" class="btn btn-default" data-dismiss="modal">Reply</button>
+                            </div>
+                          </div>
+                        
+                      </div>
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+
+
+                
+              </div>
+              <!-- modal end -->
+                
+              </div>
+              
+              <!-- Retweet Popup -->
+              <div class="col-lg-2">
+              <a href="#" id="retweet_popup">
+                  <img id="reply" src="images/retweet.png" style="width: 18px; height: 18px;">
+                  
+              </a>
+
+              <div class="container">
+                <!-- Trigger the modal with an icon -->
+                <!-- Modal -->
+                <div class="modal fade" id="modal_retweet" role="dialog">
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"><center><b>Reply to Tito</b></center></h4>
+                      </div>
+                      <div class="modal-body">
+                        <p> 
+                        <div>
+                          <div>
+                          <img src="images/tito.jpg" style="display: inline-block; width: 35px; height: 35px; border-radius: 50%; float: left;" alt="Italian Trulli">                
+                          </div>
+                          <div style="margin-left: 42px;color: #14171a;font-size: 14px;font-weight: bold;" class="profile-detail">
+                      Tito<span>@ItsTito</span>
+                          </div>
+                          </div>
+                          </p>
+                      </div>
+                      <span style="margin-left: 10px;">Replying to @ItsTito</span>
+                      <div class="modal-footer">
+                        <div style="color: #14171a;">
+                            <textarea rows="3" cols="68" placeholder="Tweet your reply">
+                            </textarea>
+                            <div>
+                              <button type="button" style="float: right;" class="btn btn-default" data-dismiss="modal">Reply</button>
+                            </div>
+                          </div>
+                        
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+
+
+                
+              </div>
+              <!-- modal end -->
+                
               </div>
 
-        </div>  
+              <!-- Like button -->
+
+              <div class="col-lg-2">
+              <a href="#">
+                  <img id="reply" src="images/like.png" style="width: 18px; height: 18px;">
+                  
+              </a>
+              </div>
+
+
+              <!-- Direct Message Popup -->
+              <div class="col-lg-2">
+              <a href="#" id="message_popup">
+                  <img id="reply" src="images/message.png" style="width: 18px; height: 18px;">
+                  
+              </a>
+
+              <div class="container">
+                <!-- Trigger the modal with an icon -->
+                <!-- Modal -->
+                <div class="modal fade" id="modal_message" role="dialog">
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"><center><b>Reply to Tito</b></center></h4>
+                      </div>
+                      <div class="modal-body">
+                        <p> 
+                        <div>
+                          <div>
+                          <img src="images/tito.jpg" style="display: inline-block; width: 35px; height: 35px; border-radius: 50%; float: left;" alt="Italian Trulli">                
+                          </div>
+                          <div style="margin-left: 42px;color: #14171a;font-size: 14px;font-weight: bold;" class="profile-detail">
+                      Tito<span>@ItsTito</span>
+                          </div>
+                          </div>
+                          </p>
+                      </div>
+                      <span style="margin-left: 10px;">Replying to @ItsTito</span>
+                      <div class="modal-footer">
+                        <div style="color: #14171a;">
+                            <textarea rows="3" cols="68" placeholder="Tweet your reply">
+                            </textarea>
+                            <div>
+                              <button type="button" style="float: right;" class="btn btn-default" data-dismiss="modal">Reply</button>
+                            </div>
+                          </div>
+                        
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+
+
+                
+              </div>
+              <!-- modal end -->
+                
+              </div>
+
+              </div>
+              <br><br>
+              <hr align="center" width="650%">         
+                </div>
+              </div>
+
+          
     </div>
     <div class="col-lg-3">
         <div class="right-container">
@@ -212,7 +394,7 @@ body{
                   <button style="margin-top: 2px; margin-left: 8%; background-color: #fff;border-radius: 100px; color: #0084B4;box-shadow: none;cursor: pointer;font-size: 10px;font-weight: bold;line-height: 10px;padding: 6px 16px;position: relative;text-align: center;white-space: nowrap;border: 1px solid #1da1f2;" class="button">Follow</button>
                 </div>
             </div>
-            <hr align="center" width="650%" >
+            <hr align="center" width="650%">
 
             <div>
                 <div>
@@ -227,6 +409,20 @@ body{
     </div>
     </div>
 </div>
+
+
+
+<script type="text/javascript">
+$("#reply_popup").on("click", function() {
+   $('#modal_reply').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+$("#retweet_popup").on("click", function() {
+   $('#modal_retweet').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+$("#message_popup").on("click", function() {
+   $('#modal_message').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+</script>
 
 </body>
 </html>
